@@ -1,5 +1,9 @@
 <?php
 
+$key=getenv("APPLICATION_KEY");
+if( empty($key) )
+	$key="gvWE4JgT1tPXAIMSDpaMkix8P8SEYgqq";
+
 return array(
 
 	/*
@@ -52,7 +56,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'ja',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +69,7 @@ return array(
 	|
 	*/
 
-	'fallback_locale' => 'en',
+	'fallback_locale' => 'ja',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +82,7 @@ return array(
 	|
 	*/
 
-	'key' => 'gvWE4JgT1tPXAIMSDpaMkix8P8SEYgqq',
+	'key' => $key,
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
